@@ -15,7 +15,7 @@ El proyecto fue realizado con las siguientes dependencias NPM:
 
 + Dependencias de Producción 
   - jQuery `~v.3.1.1`
-  - Materialize `~v.0.97.8`
+  - Bootstrap: '~v. 3.3.7'
 
 ### Levantamiento ambiente de desarrollo
 
