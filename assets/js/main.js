@@ -19,6 +19,28 @@ $(document).ready(function() {
 							'</div>');
 		$('#pictures').append(div1);
 
-		
+		div1.click(function(){
+			var contenido = $('<div/>',{'class':'modal-content'});
+			var titulo = $('<h6/>', {'text':title});
+			var imagenMod = $('<img/>',{'src':'assets/img/' + id + '.jpg','class':'imagenMod'});
+			var userMod = $('<h5/>',{'class':'fa fa-user-circle','text': user + ' ' + '#' + hash});
+			var descrMod = $('<p/>',{'text':description});
+			var cierre = $('<span/>',{'text':'X', 'class':'close'});
+			//Agregamos cada variable al contenedor
+			contenido.append(cierre);
+			contenido.append(titulo);
+			contenido.append(imagenMod);
+			contenido.append(userMod);
+			contenido.append(descrMod);
+
+
+			$('#myModal').append(contenido);
+			$('#myModal').show();
+			cierre.click(function(){
+				$('#myModal').hide();
+				contenido.hide();
+
+			})
+		});
 	});
 });
